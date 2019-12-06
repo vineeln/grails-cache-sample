@@ -130,10 +130,7 @@ environments:
 
 grails:
     cache:
-        config:
-            cache:
-                name: 'mycache'
-                eternal: false
-                overflowToDisk: true
-                maxElementsInMemory: 10000
-                maxElementsOnDisk: 10000000
+      ehcache:
+        ehcacheXmlLocation: classpath:ehcache.xml
+        lockTimeout: 200
+
