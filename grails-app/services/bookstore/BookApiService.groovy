@@ -33,7 +33,7 @@ class BookApiService {
 
     @Cacheable(value="cache1", key={bookName})
     def String findAuthorUsingCache1(String bookName) {
-        System.out.println "In findAuthor"
+        System.out.println "In findAuthorUsingCache1"
         return "HelloBook";
     }
 }

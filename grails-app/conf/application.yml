@@ -127,10 +127,10 @@ environments:
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
 
-
+# grails is recommending to use a different name than ehcache.xml to avoid conflicting it with hibernate ehcache
 grails:
     cache:
       ehcache:
-        ehcacheXmlLocation: classpath:ehcache.xml
+        ehcacheXmlLocation: classpath:grails-ehcache.xml
         lockTimeout: 200
 
